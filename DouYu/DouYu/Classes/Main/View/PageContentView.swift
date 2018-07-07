@@ -42,9 +42,9 @@ class PageContentView: UIView {
     /// PageContentView初始化方法
     ///
     /// - Parameters:
-    ///   - frame: <#frame description#>
-    ///   - childVCs: <#childVCs description#>
-    ///   - parentViewController: <#parentViewController description#>
+    ///   - frame: frame
+    ///   - childVCs: 子控制器数组
+    ///   - parentViewController: 父控制器
     init(frame: CGRect, childVCs: [UIViewController], parentViewController: UIViewController?) {
         self.childVCs = childVCs
         self.parentViewController = parentViewController
