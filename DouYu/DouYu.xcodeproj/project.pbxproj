@@ -21,6 +21,15 @@
 		25D5417B20F0BF5E00C31E52 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D5417A20F0BF5E00C31E52 /* LiveViewController.swift */; };
 		25D5418120F0CB1D00C31E52 /* BaseNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D5418020F0CB1D00C31E52 /* BaseNavViewController.swift */; };
 		25D5418320F0CEFB00C31E52 /* Bundle+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D5418220F0CEFB00C31E52 /* Bundle+Extention.swift */; };
+		25D5418520F0D00300C31E52 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D5418420F0D00300C31E52 /* PageTitleView.swift */; };
+		25D5418820F0ED1F00C31E52 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D5418720F0ED1F00C31E52 /* Common.swift */; };
+		25D5418A20F0F77200C31E52 /* UIBarButtonItem+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D5418920F0F77200C31E52 /* UIBarButtonItem+Extention.swift */; };
+		25D5418C20F0FD3C00C31E52 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D5418B20F0FD3C00C31E52 /* PageContentView.swift */; };
+		25D5418E20F1046600C31E52 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D5418D20F1046600C31E52 /* RecommendViewController.swift */; };
+		25D5419020F1047A00C31E52 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D5418F20F1047A00C31E52 /* GameViewController.swift */; };
+		25D5419220F1048A00C31E52 /* AmuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D5419120F1048A00C31E52 /* AmuseViewController.swift */; };
+		25D5419420F1049B00C31E52 /* FunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D5419320F1049B00C31E52 /* FunnyViewController.swift */; };
+		25D5419620F1167300C31E52 /* UIColor+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D5419520F1167300C31E52 /* UIColor+Extention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +70,15 @@
 		25D5417A20F0BF5E00C31E52 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 		25D5418020F0CB1D00C31E52 /* BaseNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavViewController.swift; sourceTree = "<group>"; };
 		25D5418220F0CEFB00C31E52 /* Bundle+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extention.swift"; sourceTree = "<group>"; };
+		25D5418420F0D00300C31E52 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		25D5418720F0ED1F00C31E52 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		25D5418920F0F77200C31E52 /* UIBarButtonItem+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extention.swift"; sourceTree = "<group>"; };
+		25D5418B20F0FD3C00C31E52 /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
+		25D5418D20F1046600C31E52 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		25D5418F20F1047A00C31E52 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		25D5419120F1048A00C31E52 /* AmuseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseViewController.swift; sourceTree = "<group>"; };
+		25D5419320F1049B00C31E52 /* FunnyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyViewController.swift; sourceTree = "<group>"; };
+		25D5419520F1167300C31E52 /* UIColor+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extention.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +133,7 @@
 		251B282720E7D4300061E5A7 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				25D5418620F0ECF700C31E52 /* Common */,
 				25D5415720F0BD3D00C31E52 /* Extention */,
 			);
 			path = Tools;
@@ -231,6 +250,8 @@
 		25D5415320F0BCFF00C31E52 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				25D5418420F0D00300C31E52 /* PageTitleView.swift */,
+				25D5418B20F0FD3C00C31E52 /* PageContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -250,6 +271,8 @@
 			children = (
 				25D5418220F0CEFB00C31E52 /* Bundle+Extention.swift */,
 				25D5415820F0BD3D00C31E52 /* UIButton+Extention.swift */,
+				25D5418920F0F77200C31E52 /* UIBarButtonItem+Extention.swift */,
+				25D5419520F1167300C31E52 /* UIColor+Extention.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -272,6 +295,10 @@
 			isa = PBXGroup;
 			children = (
 				25D5417420F0BF1300C31E52 /* HomeViewController.swift */,
+				25D5418D20F1046600C31E52 /* RecommendViewController.swift */,
+				25D5418F20F1047A00C31E52 /* GameViewController.swift */,
+				25D5419120F1048A00C31E52 /* AmuseViewController.swift */,
+				25D5419320F1049B00C31E52 /* FunnyViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -368,6 +395,14 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		25D5418620F0ECF700C31E52 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				25D5418720F0ED1F00C31E52 /* Common.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -501,15 +536,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				25D5418320F0CEFB00C31E52 /* Bundle+Extention.swift in Sources */,
+				25D5419220F1048A00C31E52 /* AmuseViewController.swift in Sources */,
+				25D5418520F0D00300C31E52 /* PageTitleView.swift in Sources */,
 				25D5417520F0BF1300C31E52 /* HomeViewController.swift in Sources */,
+				25D5418C20F0FD3C00C31E52 /* PageContentView.swift in Sources */,
+				25D5419620F1167300C31E52 /* UIColor+Extention.swift in Sources */,
+				25D5419420F1049B00C31E52 /* FunnyViewController.swift in Sources */,
 				25D5415620F0BCFF00C31E52 /* MainViewController.swift in Sources */,
+				25D5418820F0ED1F00C31E52 /* Common.swift in Sources */,
+				25D5418A20F0F77200C31E52 /* UIBarButtonItem+Extention.swift in Sources */,
 				25D5417B20F0BF5E00C31E52 /* LiveViewController.swift in Sources */,
 				25D5417320F0BEF100C31E52 /* BaseViewController.swift in Sources */,
 				25D5417720F0BF3300C31E52 /* FollowViewController.swift in Sources */,
 				25D5418120F0CB1D00C31E52 /* BaseNavViewController.swift in Sources */,
 				25D5417920F0BF4700C31E52 /* ProfileViewController.swift in Sources */,
+				25D5419020F1047A00C31E52 /* GameViewController.swift in Sources */,
 				256CEF3A20E7BCA2004FD2CD /* AppDelegate.swift in Sources */,
 				25D5415920F0BD3D00C31E52 /* UIButton+Extention.swift in Sources */,
+				25D5418E20F1046600C31E52 /* RecommendViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
