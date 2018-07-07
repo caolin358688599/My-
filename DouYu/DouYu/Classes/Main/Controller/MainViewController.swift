@@ -8,6 +8,11 @@
 
 import UIKit
 
-class MainViewController: UITabViewController {
-
+class MainViewController:    UITabBarController {
+     ///M
+}
+extension MainViewController {
+    private func setupChildViewController() {
+        
+    }
 }
