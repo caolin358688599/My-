@@ -19,6 +19,8 @@
 		25D5417720F0BF3300C31E52 /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D5417620F0BF3300C31E52 /* FollowViewController.swift */; };
 		25D5417920F0BF4700C31E52 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D5417820F0BF4700C31E52 /* ProfileViewController.swift */; };
 		25D5417B20F0BF5E00C31E52 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D5417A20F0BF5E00C31E52 /* LiveViewController.swift */; };
+		25D5418120F0CB1D00C31E52 /* BaseNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D5418020F0CB1D00C31E52 /* BaseNavViewController.swift */; };
+		25D5418320F0CEFB00C31E52 /* Bundle+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D5418220F0CEFB00C31E52 /* Bundle+Extention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		25D5417620F0BF3300C31E52 /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
 		25D5417820F0BF4700C31E52 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		25D5417A20F0BF5E00C31E52 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		25D5418020F0CB1D00C31E52 /* BaseNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavViewController.swift; sourceTree = "<group>"; };
+		25D5418220F0CEFB00C31E52 /* Bundle+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extention.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,12 +91,12 @@
 		251B282520E7D4300061E5A7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				251B282B20E7D4300061E5A7 /* Main */,
 				251B282620E7D4300061E5A7 /* Home */,
 				251B282720E7D4300061E5A7 /* Tools */,
 				251B282820E7D4300061E5A7 /* Follow */,
 				251B282920E7D4300061E5A7 /* Profile */,
 				251B282A20E7D4300061E5A7 /* Live */,
-				251B282B20E7D4300061E5A7 /* Main */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -236,6 +240,7 @@
 			children = (
 				25D5415520F0BCFF00C31E52 /* MainViewController.swift */,
 				25D5417220F0BEF100C31E52 /* BaseViewController.swift */,
+				25D5418020F0CB1D00C31E52 /* BaseNavViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 		25D5415720F0BD3D00C31E52 /* Extention */ = {
 			isa = PBXGroup;
 			children = (
+				25D5418220F0CEFB00C31E52 /* Bundle+Extention.swift */,
 				25D5415820F0BD3D00C31E52 /* UIButton+Extention.swift */,
 			);
 			path = Extention;
@@ -494,11 +500,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25D5418320F0CEFB00C31E52 /* Bundle+Extention.swift in Sources */,
 				25D5417520F0BF1300C31E52 /* HomeViewController.swift in Sources */,
 				25D5415620F0BCFF00C31E52 /* MainViewController.swift in Sources */,
 				25D5417B20F0BF5E00C31E52 /* LiveViewController.swift in Sources */,
 				25D5417320F0BEF100C31E52 /* BaseViewController.swift in Sources */,
 				25D5417720F0BF3300C31E52 /* FollowViewController.swift in Sources */,
+				25D5418120F0CB1D00C31E52 /* BaseNavViewController.swift in Sources */,
 				25D5417920F0BF4700C31E52 /* ProfileViewController.swift in Sources */,
 				256CEF3A20E7BCA2004FD2CD /* AppDelegate.swift in Sources */,
 				25D5415920F0BD3D00C31E52 /* UIButton+Extention.swift in Sources */,

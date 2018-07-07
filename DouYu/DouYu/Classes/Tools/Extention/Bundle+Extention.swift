@@ -7,3 +7,9 @@
 //
 
 import Foundation
+// MARK: -  获取命名空间
+extension Bundle {
+    var namespace: String {
+        return infoDictionary?["CFBundleName"] as? String ?? ""
+    }
+}
