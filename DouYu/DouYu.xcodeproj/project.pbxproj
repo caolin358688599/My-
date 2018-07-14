@@ -12,12 +12,19 @@
 		256CEF4420E7BCA3004FD2CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 256CEF4220E7BCA3004FD2CD /* LaunchScreen.storyboard */; };
 		256CEF4F20E7BCA3004FD2CD /* DouYuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256CEF4E20E7BCA3004FD2CD /* DouYuTests.swift */; };
 		256CEF5A20E7BCA3004FD2CD /* DouYuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256CEF5920E7BCA3004FD2CD /* DouYuUITests.swift */; };
+		257BE28F20F3A73200BFDB23 /* BaseGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257BE28E20F3A73200BFDB23 /* BaseGameModel.swift */; };
+		257BE29120F3A82800BFDB23 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257BE29020F3A82800BFDB23 /* BaseViewModel.swift */; };
+		257BE29320F3A87B00BFDB23 /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257BE29220F3A87B00BFDB23 /* AnchorModel.swift */; };
+		257BE29520F3AA4800BFDB23 /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257BE29420F3AA4800BFDB23 /* AnchorGroup.swift */; };
 		258356B920F205DA0076DCCD /* RecommendReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258356B720F205DA0076DCCD /* RecommendReusableView.swift */; };
 		258356BA20F205DA0076DCCD /* RecommendReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 258356B820F205DA0076DCCD /* RecommendReusableView.xib */; };
 		258356BF20F208FC0076DCCD /* CollectionViewNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258356BD20F208FC0076DCCD /* CollectionViewNormalCell.swift */; };
 		258356C020F208FC0076DCCD /* CollectionViewNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 258356BE20F208FC0076DCCD /* CollectionViewNormalCell.xib */; };
 		258356C320F225FF0076DCCD /* CollectionPrettyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258356C120F225FF0076DCCD /* CollectionPrettyViewCell.swift */; };
 		258356C420F225FF0076DCCD /* CollectionPrettyViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 258356C220F225FF0076DCCD /* CollectionPrettyViewCell.xib */; };
+		258356CB20F263D90076DCCD /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258356CA20F263D90076DCCD /* NetworkTool.swift */; };
+		25AD9C8A20F8F01100D8A3FC /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AD9C8920F8F01100D8A3FC /* RecommendViewModel.swift */; };
+		25AD9C8C20F8F24200D8A3FC /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AD9C8B20F8F24200D8A3FC /* NSDate-Extension.swift */; };
 		25D5415620F0BCFF00C31E52 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D5415520F0BCFF00C31E52 /* MainViewController.swift */; };
 		25D5415920F0BD3D00C31E52 /* UIButton+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D5415820F0BD3D00C31E52 /* UIButton+Extention.swift */; };
 		25D5417320F0BEF100C31E52 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D5417220F0BEF100C31E52 /* BaseViewController.swift */; };
@@ -72,12 +79,19 @@
 		256CEF5520E7BCA3004FD2CD /* DouYuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DouYuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		256CEF5920E7BCA3004FD2CD /* DouYuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouYuUITests.swift; sourceTree = "<group>"; };
 		256CEF5B20E7BCA3004FD2CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		257BE28E20F3A73200BFDB23 /* BaseGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseGameModel.swift; sourceTree = "<group>"; };
+		257BE29020F3A82800BFDB23 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		257BE29220F3A87B00BFDB23 /* AnchorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
+		257BE29420F3AA4800BFDB23 /* AnchorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
 		258356B720F205DA0076DCCD /* RecommendReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendReusableView.swift; sourceTree = "<group>"; };
 		258356B820F205DA0076DCCD /* RecommendReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendReusableView.xib; sourceTree = "<group>"; };
 		258356BD20F208FC0076DCCD /* CollectionViewNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewNormalCell.swift; sourceTree = "<group>"; };
 		258356BE20F208FC0076DCCD /* CollectionViewNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewNormalCell.xib; sourceTree = "<group>"; };
 		258356C120F225FF0076DCCD /* CollectionPrettyViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPrettyViewCell.swift; sourceTree = "<group>"; };
 		258356C220F225FF0076DCCD /* CollectionPrettyViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPrettyViewCell.xib; sourceTree = "<group>"; };
+		258356CA20F263D90076DCCD /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
+		25AD9C8920F8F01100D8A3FC /* RecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
+		25AD9C8B20F8F24200D8A3FC /* NSDate-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
 		25D5415520F0BCFF00C31E52 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		25D5415820F0BD3D00C31E52 /* UIButton+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extention.swift"; sourceTree = "<group>"; };
 		25D5417220F0BEF100C31E52 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +174,7 @@
 		251B282720E7D4300061E5A7 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				258356C920F263C60076DCCD /* NetworkTool */,
 				25D5418620F0ECF700C31E52 /* Common */,
 				25D5415720F0BD3D00C31E52 /* Extention */,
 			);
@@ -262,9 +277,20 @@
 			path = DouYuUITests;
 			sourceTree = "<group>";
 		};
+		258356C920F263C60076DCCD /* NetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+				258356CA20F263D90076DCCD /* NetworkTool.swift */,
+			);
+			path = NetworkTool;
+			sourceTree = "<group>";
+		};
 		25D5415120F0BCFF00C31E52 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				257BE28E20F3A73200BFDB23 /* BaseGameModel.swift */,
+				257BE29220F3A87B00BFDB23 /* AnchorModel.swift */,
+				257BE29420F3AA4800BFDB23 /* AnchorGroup.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -272,6 +298,7 @@
 		25D5415220F0BCFF00C31E52 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				257BE29020F3A82800BFDB23 /* BaseViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -302,6 +329,7 @@
 		25D5415720F0BD3D00C31E52 /* Extention */ = {
 			isa = PBXGroup;
 			children = (
+				25AD9C8B20F8F24200D8A3FC /* NSDate-Extension.swift */,
 				25D5418220F0CEFB00C31E52 /* Bundle+Extention.swift */,
 				25D5415820F0BD3D00C31E52 /* UIButton+Extention.swift */,
 				25D5418920F0F77200C31E52 /* UIBarButtonItem+Extention.swift */,
@@ -341,6 +369,7 @@
 		25D5415D20F0BDAB00C31E52 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				25AD9C8920F8F01100D8A3FC /* RecommendViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -659,14 +688,18 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-DouYu/Pods-DouYu-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -687,12 +720,17 @@
 				25D5417520F0BF1300C31E52 /* HomeViewController.swift in Sources */,
 				25D5418C20F0FD3C00C31E52 /* PageContentView.swift in Sources */,
 				25D5419620F1167300C31E52 /* UIColor+Extention.swift in Sources */,
+				25AD9C8C20F8F24200D8A3FC /* NSDate-Extension.swift in Sources */,
+				257BE29120F3A82800BFDB23 /* BaseViewModel.swift in Sources */,
 				25D5419420F1049B00C31E52 /* FunnyViewController.swift in Sources */,
 				25D5415620F0BCFF00C31E52 /* MainViewController.swift in Sources */,
 				25D5418820F0ED1F00C31E52 /* Common.swift in Sources */,
+				257BE29320F3A87B00BFDB23 /* AnchorModel.swift in Sources */,
 				25D5418A20F0F77200C31E52 /* UIBarButtonItem+Extention.swift in Sources */,
 				25D5417B20F0BF5E00C31E52 /* LiveViewController.swift in Sources */,
+				25AD9C8A20F8F01100D8A3FC /* RecommendViewModel.swift in Sources */,
 				25D5417320F0BEF100C31E52 /* BaseViewController.swift in Sources */,
+				257BE28F20F3A73200BFDB23 /* BaseGameModel.swift in Sources */,
 				25D5417720F0BF3300C31E52 /* FollowViewController.swift in Sources */,
 				25D5418120F0CB1D00C31E52 /* BaseNavViewController.swift in Sources */,
 				258356BF20F208FC0076DCCD /* CollectionViewNormalCell.swift in Sources */,
@@ -702,7 +740,9 @@
 				25D5419020F1047A00C31E52 /* GameViewController.swift in Sources */,
 				256CEF3A20E7BCA2004FD2CD /* AppDelegate.swift in Sources */,
 				25D5415920F0BD3D00C31E52 /* UIButton+Extention.swift in Sources */,
+				257BE29520F3AA4800BFDB23 /* AnchorGroup.swift in Sources */,
 				25D5418E20F1046600C31E52 /* RecommendViewController.swift in Sources */,
+				258356CB20F263D90076DCCD /* NetworkTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

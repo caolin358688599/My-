@@ -8,6 +8,8 @@
 
 import UIKit
 
-class BaseViewModel: NSObject {
+class BaseViewModel  {
+    lazy var anchorGroups: [AnchorGroup] = [AnchorGroup]()
+    
 
 }

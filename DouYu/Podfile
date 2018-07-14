@@ -9,6 +9,8 @@ target 'DouYu' do
     pod 'HandyJSON', '4.1.1'
     # pod 'SnapKit'                # UI布局组件
     pod 'Kingfisher', '4.7.0'                 # 图片下载缓存转码等
+    pod 'IBAnimatable'
+     pod 'SnapKit'
     
     
     # Pods for DouYu
