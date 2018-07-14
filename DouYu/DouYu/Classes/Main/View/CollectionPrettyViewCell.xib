@@ -38,8 +38,9 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                         <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="5"/>
+                                <integer key="value" value="3"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </label>
@@ -52,31 +53,28 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6666在线" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OkB-3H-jyb">
-                        <rect key="frame" x="99" y="8" width="60" height="13.5"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81X-EF-7MF">
+                        <rect key="frame" x="79" y="8" width="80" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="60" id="ZHQ-3q-Dmm"/>
+                            <constraint firstAttribute="height" constant="20" id="8g0-F7-uwA"/>
+                            <constraint firstAttribute="width" constant="80" id="SNB-tS-eYp"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
+                        <state key="normal" title="在线人数666"/>
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="3"/>
-                            </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
-                    </label>
+                    </button>
                 </subviews>
             </view>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="81X-EF-7MF" secondAttribute="trailing" constant="8" id="14J-WX-zxZ"/>
                 <constraint firstAttribute="trailing" secondItem="L6V-BQ-zjJ" secondAttribute="trailing" id="2qe-Nd-ucq"/>
+                <constraint firstItem="81X-EF-7MF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="3IT-50-L7Z"/>
                 <constraint firstItem="L6V-BQ-zjJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ak2-Tm-5Ys"/>
                 <constraint firstItem="dIR-XL-CQD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="G9c-UL-oR2"/>
                 <constraint firstItem="dIR-XL-CQD" firstAttribute="top" secondItem="iwR-ay-l7d" secondAttribute="bottom" constant="5" id="HEv-Mg-DeJ"/>
-                <constraint firstAttribute="trailing" secondItem="OkB-3H-jyb" secondAttribute="trailing" constant="8" id="O7a-3n-2zs"/>
-                <constraint firstItem="OkB-3H-jyb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="SUK-tr-ILN"/>
                 <constraint firstItem="iwR-ay-l7d" firstAttribute="top" secondItem="L6V-BQ-zjJ" secondAttribute="bottom" constant="5" id="U3J-9D-UXP"/>
                 <constraint firstItem="L6V-BQ-zjJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ilK-9T-78T"/>
                 <constraint firstAttribute="bottom" secondItem="dIR-XL-CQD" secondAttribute="bottom" constant="10" id="wgh-jt-9Xf"/>
@@ -85,6 +83,12 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="167" height="211"/>
+            <connections>
+                <outlet property="cityBtn" destination="dIR-XL-CQD" id="D0M-Pc-ba9"/>
+                <outlet property="iconImageView" destination="L6V-BQ-zjJ" id="x3S-T3-vQo"/>
+                <outlet property="nickNameLabel" destination="iwR-ay-l7d" id="8sp-fd-QQl"/>
+                <outlet property="onLineButton" destination="81X-EF-7MF" id="hXH-UM-mCs"/>
+            </connections>
             <point key="canvasLocation" x="87.5" y="80.5"/>
         </collectionViewCell>
     </objects>
