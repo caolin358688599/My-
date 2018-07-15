@@ -12,6 +12,7 @@ class RecommendViewModel {
     lazy var anchorGroups: [AnchorGroup] = [AnchorGroup]()
     private lazy var bigDataGroup: AnchorGroup = AnchorGroup()
     private lazy var prettyGroup: AnchorGroup = AnchorGroup()
+  lazy var cycleModels: [CycleModel] = [CycleModel]()
 }
 
 // MARK: - 发送网络请求
@@ -39,7 +40,6 @@ extension RecommendViewModel {
         //2.0 请求颜值数据
         dGroup.enter()
         NetworkTools.requestData(.get, URLString: "http://capi.douyucdn.cn/api/v1/getVerticalRoom", parameters: parameters) { (result) in
-            debugPrint(result)
             guard let resultDict = result as? [String : Any] else {
                 return;
             }
@@ -76,5 +76,22 @@ extension RecommendViewModel {
             finishCallback()
         }
     }
+       // MARK: - 无线轮播数据
+    func requestCycleData(finishCallback: @escaping () -> ()) {
+        NetworkTools.requestData(.get, URLString: "http://www.douyutv.com/api/v1/slide/6", parameters: ["version" : "2.300"]) { (result) in
+            guard let resultDict = result as? [String: Any] else {
+                return
+            }
+            guard let dataArray = resultDict["data"] as? [[String: Any]] else {
+                return;
+            }
+            for dict in dataArray {
+                self.cycleModels.append(CycleModel(dict: dict))
+            }
+            finishCallback()
+        }
+    }
+    
 }
+
 

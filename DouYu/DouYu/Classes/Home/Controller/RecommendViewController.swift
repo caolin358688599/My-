@@ -16,9 +16,15 @@ let kPrettyCellID = "kPrettyCellID"
 let kNormalItemW = (kScreenW - 3 * kItemMargin ) / 2
 let kNormalItemH = kNormalItemW * 3 / 4
 let kPrettyItemH = kNormalItemW * 4 / 3
+private let kCycleViewH = kScreenW * 3 / 8
 class RecommendViewController: BaseViewController {
     private lazy var recommendVM:   RecommendViewModel = RecommendViewModel()
       // MARK: - 定义属性
+    fileprivate lazy var cycleView: RecommendCycleView = {
+        let cycleView = RecommendCycleView.recommendCycleView()
+        cycleView.frame = CGRect(x: 0, y: -kCycleViewH, width: kScreenW, height: kCycleViewH)
+        return cycleView
+    }()
     lazy var collectionView: UICollectionView = { [unowned  self] in
         // 1.0 创建布局
         let layout = UICollectionViewFlowLayout()
@@ -43,6 +49,7 @@ class RecommendViewController: BaseViewController {
         super.viewDidLoad()
         setupUI()
         loadData()
+ 
         // Do any additional setup after loading the view.
     }
 
@@ -58,12 +65,19 @@ extension RecommendViewController {
         recommendVM.requestData {
             self.collectionView.reloadData()
         }
+        recommendVM.requestCycleData {
+            self.cycleView.cycleModels = self.recommendVM.cycleModels
+        }
     }
 }
 
 extension RecommendViewController {
     func setupUI() {
         view.addSubview(collectionView)
+        //2.0 将cycleView添加到UIcollectionionView中
+        collectionView.addSubview(cycleView)
+        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH, left: 0, bottom: 0, right: 0)
+        
     }
 }
 
