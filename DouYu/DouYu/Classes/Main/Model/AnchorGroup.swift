@@ -26,6 +26,7 @@ import UIKit
     }
     // 组显示的标题
     var tag_name: String?
+    var icon_url: String?
     
     init(dict: [String : Any]) {
         super.init()

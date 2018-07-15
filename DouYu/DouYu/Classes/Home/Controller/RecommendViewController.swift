@@ -17,14 +17,21 @@ let kNormalItemW = (kScreenW - 3 * kItemMargin ) / 2
 let kNormalItemH = kNormalItemW * 3 / 4
 let kPrettyItemH = kNormalItemW * 4 / 3
 private let kCycleViewH = kScreenW * 3 / 8
+private let kGameViewH: CGFloat = 90
 class RecommendViewController: BaseViewController {
     private lazy var recommendVM:   RecommendViewModel = RecommendViewModel()
       // MARK: - 定义属性
     fileprivate lazy var cycleView: RecommendCycleView = {
         let cycleView = RecommendCycleView.recommendCycleView()
-        cycleView.frame = CGRect(x: 0, y: -kCycleViewH, width: kScreenW, height: kCycleViewH)
+        cycleView.frame = CGRect(x: 0, y: -(kCycleViewH + kGameViewH), width: kScreenW, height: kCycleViewH)
         return cycleView
     }()
+    fileprivate lazy var gameView: RecommendGameView = {
+        let gameView = RecommendGameView.recommendGameView()
+        gameView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
+        return gameView
+    }()
+    
     lazy var collectionView: UICollectionView = { [unowned  self] in
         // 1.0 创建布局
         let layout = UICollectionViewFlowLayout()
@@ -64,6 +71,7 @@ extension RecommendViewController {
     func loadData () {
         recommendVM.requestData {
             self.collectionView.reloadData()
+            self.gameView.groups = self.recommendVM.anchorGroups
         }
         recommendVM.requestCycleData {
             self.cycleView.cycleModels = self.recommendVM.cycleModels
@@ -76,7 +84,9 @@ extension RecommendViewController {
         view.addSubview(collectionView)
         //2.0 将cycleView添加到UIcollectionionView中
         collectionView.addSubview(cycleView)
-        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH, left: 0, bottom: 0, right: 0)
+        gameView.backgroundColor = UIColor.red
+        collectionView.addSubview(gameView)
+        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH + kGameViewH, left: 0, bottom: 0, right: 0)
         
     }
 }
